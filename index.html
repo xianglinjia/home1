@@ -3,19 +3,56 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>台中市景點資訊網</title>
 	<style>
 		#container{margin:0 auto;width: 1024px;}
 		td{text-align: center;}
 		.img_rounded{ border-radius: 50%; width: 300px; height: 300px;}
 		.img_banner{ border-radius: 10px;}
+		iframe {border-radius: 20px}
 		.font1 {font-size:40px; }
         .font2 {font-size:30px; }
         .img_rounded:hover {rotate:-5deg; opacity: 70%; }
         .font2:hover {backgound-coler: black;colar: white;}
+
+        .navbar {
+		  overflow: hidden;
+		  background-color: #333;
+		  position: fixed;
+		  top:0;
+		  width: 100%;
+		}
+
+		.navbar a {
+		  float: left;
+		  display: block;
+		  color: #f2f2f2;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		  font-size: 17px;
+		}
+
+		.navbar a:hover {
+			background: #ddd;
+			color: black;
+        }
+
+
 	</style>
 </head>
 <body>
+
+		<div class="navbar">
+		  <a href="#s0">回首頁</a>
+  		  <a href="#s1">台中國家歌劇院</a>
+		  <a href="#s2">臺中州廳</a>
+		  <a href="#s3">審計新村</a>
+		</div>
+
+		</div id="s0"></div>
+		<br>
+		<br>
 
 	<div id="container">
 		<table>
@@ -38,7 +75,7 @@
 		</tr>
 		<tr>
 			<td>
-				<img class="img_rounded" src="01.jpeg">
+				<img id="s1" class="img_rounded" src="01.jpeg">
 			</td>
 			<td>
 				臺中國家歌劇院<br>
@@ -60,12 +97,12 @@
 
 			</td>
 			<td>		
-				<img class="img_rounded" src="02.jpeg">
+				<img id="s2" class="img_rounded" src="02.jpeg">
 			</td>
 		</tr>
 		<tr>
 			<td>
-				<img class="img_rounded" src="03.jpeg">
+				<img id="s3" class="img_rounded" src="03.jpeg">
 
 			</td>
 			<td>
@@ -78,12 +115,19 @@
 			所在位置：台中市西區民生路368巷
 			</td>
 		</tr>
+
 		<tr>
-			<td colspen="2"></td>
-			向嘉琳製作
+			<td colspan="2">
+				<iframe src="https://www.google.com/maps/d/embed?mid=1WeqUZdFu9V29uLaY7CrMNsFEA0PdHmk&ehbc=2E312F" width="1024" height="800"></iframe>
+			</td>
 		</tr>
-			
+
+		<tr>
+			<td height="50px" bgcolor="black" colspan="2">
+				<font color="white">向嘉琳製作 2024</font>
+			<td>
+		</tr>
 	</table>
-	
+	</div>	
 </body>
 </html>
